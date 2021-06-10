@@ -1,0 +1,59 @@
+nav, .nav-links, .right-links, .user-link {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+	user-select: none;
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 68px;
+	width: 100%;
+	padding: 0 1rem;
+	background-color: rgba(0, 0, 0, 0.425);
+}
+
+.logo {
+	img {
+		height: 60px;
+		width: auto;
+		margin-left: -10px;
+	}
+}
+
+.nav-links {
+	a {
+		color:#cfcfcf;
+		font-size: .9rem;
+	}
+	a.active {
+		color: white;
+	}
+}
+
+.fill-space {
+	flex: 1;
+}
+
+.right-links {
+	a {
+		font-size: .9rem;
+	}
+	img {
+		height: 30px;
+		border-radius: 2px;
+		width: auto;
+	}
+	i {
+		vertical-align: top;
+	}
+}
+
+// Bootstrap MD breakpoint
+@media screen and (min-width: 768px) {
+	nav {
+		padding: 0 3rem;
+	}
+}

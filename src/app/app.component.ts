@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MovieService } from './services/movie.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'netfix-clone';
+  originals$ = this.movies.originals(); 
+  trending$ = this.movies.trending();
+  action$ = this.movies.action();
+  horror$ = this.movies.horror();
+  topRated$ = this.movies.topRated();
+  romance$ = this.movies.romance();
+  comedy$ = this.movies.comedy();
+
+  constructor(private movies: MovieService) {}
 }

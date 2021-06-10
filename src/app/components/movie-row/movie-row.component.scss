@@ -1,0 +1,48 @@
+.movies {
+	display: flex;
+	align-items: center;
+	gap: .6rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+}
+
+.movie {
+	border-radius: 2px;
+	transition: 200ms transform ease;
+	box-shadow: 0 0 10px black;
+	position: relative;
+	width: 175px;
+
+	&:hover {
+		transform: scale(1.1);
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 2px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+}
+
+.view-btn {
+	height: 100%;
+	width: 100%;
+	transition: 200ms transform ease;
+	&:hover {
+		transform: scale(1.15);
+	}
+}
+
+@media screen and (max-width: 825px) {
+	.movies-container {
+		grid-template-columns: repeat(3, 1fr);
+		gap: .5rem;
+	}	
+}
