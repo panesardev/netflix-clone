@@ -4,30 +4,30 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-footer',
   template: `
     <footer>
-      <div class="social-icons mb-3">
-        <a target="_blank" href="https://www.facebook.com/netflixcanada">
+      <div class="social-icons">
+        <a rel="noopener" rel="noreferrer" target="_blank" href="https://www.facebook.com/netflixcanada">
           <i class="fab fa-facebook-square"></i>
         </a>
-        <a target="_blank" href="https://www.instagram.com/Netflix/">
+        <a rel="noopener" rel="noreferrer" target="_blank" href="https://www.instagram.com/Netflix/">
           <i class="fab fa-instagram-square"></i>
         </a>
-        <a target="_blank" href="https://twitter.com/netflix_CA">
+        <a rel="noopener" rel="noreferrer" target="_blank" href="https://twitter.com/netflix_CA">
           <i class="fab fa-twitter"></i>
         </a>
-        <a target="_blank" href="https://www.youtube.com/user/NewOnNetflix">
+        <a rel="noopener" rel="noreferrer" target="_blank" href="https://www.youtube.com/user/NewOnNetflix">
           <i class="fab fa-youtube"></i>
         </a>
       </div>
-      <div class="links mb-3">
-        <div><a href="">Audio and Subtitles</a><a href="">Media Center</a><a href="">Privacy</a><a href="">Contact Us</a></div>
-        <div><a href="">Audio Description</a><a href="">Investor Relations</a><a href="">Legal Notices</a></div>
-        <div><a href="">Help Centers</a><a href="">Jobs</a><a href="">Cookie Preferences</a></div>
-        <div><a href="">Gift Cards</a><a href="">Terms of use</a><a href="">Corporate Information</a></div>
+      <div class="links">
+        <div><a rel="noopener" rel="noreferrer" href="#">Audio and Subtitles</a><a rel="noopener" rel="noreferrer" href="#">Media Center</a><a rel="noopener" rel="noreferrer" href="#">Privacy</a><a rel="noopener" rel="noreferrer" href="#">Contact Us</a></div>
+        <div><a rel="noopener" rel="noreferrer" href="#">Audio Description</a><a rel="noopener" rel="noreferrer" href="#">Investor Relations</a><a rel="noopener" rel="noreferrer" href="#">Legal Notices</a></div>
+        <div><a rel="noopener" rel="noreferrer" href="#">Help Centers</a><a rel="noopener" rel="noreferrer" href="#">Jobs</a><a rel="noopener" rel="noreferrer" href="#">Cookie Preferences</a></div>
+        <div><a rel="noopener" rel="noreferrer" href="#">Gift Cards</a><a rel="noopener" rel="noreferrer" href="#">Terms of use</a><a rel="noopener" rel="noreferrer" href="#">Corporate Information</a></div>
       </div>
-      <div class="mb-3">
+      <div>
         <button class="p-2">Service Code</button>
       </div>
-      <div class="mb-3">
+      <div>
         &copy; 1997-2021, Netflix, Inc. {{ '{5632769d-ef46-4533-a5e7-593206fe4aaa}' }}
       </div>
     </footer>

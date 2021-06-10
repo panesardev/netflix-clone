@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
     <div class="movies">
       <div *ngFor="let movie of movies">
         <div class="movie">
-          <img loading="lazy" [src]="imgUrl + movie.poster_path" [alt]="movie.title">
+          <img loading="lazy" [src]="movie.poster_path ? imgUrl + movie.poster_path : ''" [alt]="movie.title">
         </div>
       </div>
     </div>

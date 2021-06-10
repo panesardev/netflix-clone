@@ -29,19 +29,3 @@
 		}
 	}
 }
-
-.view-btn {
-	height: 100%;
-	width: 100%;
-	transition: 200ms transform ease;
-	&:hover {
-		transform: scale(1.15);
-	}
-}
-
-@media screen and (max-width: 825px) {
-	.movies-container {
-		grid-template-columns: repeat(3, 1fr);
-		gap: .5rem;
-	}	
-}
