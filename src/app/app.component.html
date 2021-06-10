@@ -37,12 +37,12 @@
         <h1>Action & Sci-fi</h1>
         <app-movie-row [movies]="movies"></app-movie-row>
       </div>
-      <div *ngIf="comedy$ | async as movies">
-        <h1>Comedy Shows</h1>
-        <app-movie-row [movies]="movies"></app-movie-row>
-      </div>
       <div *ngIf="romance$ | async as movies">
         <h1>Romantic Movies</h1>
+        <app-movie-row [movies]="movies"></app-movie-row>
+      </div>
+      <div *ngIf="comedy$ | async as movies">
+        <h1>Comedy Shows</h1>
         <app-movie-row [movies]="movies"></app-movie-row>
       </div>
     </div>

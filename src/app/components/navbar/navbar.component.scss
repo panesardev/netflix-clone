@@ -12,7 +12,13 @@ nav {
 	height: 68px;
 	width: 100%;
 	padding: 0 1rem;
-	background-color: rgba(0, 0, 0, 0.425);
+	transition: background-color 500ms ease;
+	background-image: linear-gradient(var(--dark), transparent);
+}
+
+.scrolled {
+	background-color: var(--dark);
+	background-image: none;
 }
 
 .logo {

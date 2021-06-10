@@ -30,7 +30,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit  {
 
-  constructor() { }
+  constructor() { 
+    document.onscroll = () => {
+      document.querySelector('nav')
+        .classList.toggle('scrolled', document.scrollingElement.scrollTop > document.querySelector('nav').offsetHeight)      
+    }
+  }
 
   ngOnInit(): void {
   }
