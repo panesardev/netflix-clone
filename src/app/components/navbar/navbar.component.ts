@@ -1,9 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
   template: `
     <nav>
+      <div class="menu">
+        <img src="assets/img/menu.svg" alt="menu" height="20" width="20">
+      </div>
       <div class="logo">
         <img src="assets/img/logo.png" loading="lazy" alt="netflix_logo">
       </div>
@@ -30,7 +34,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit  {
 
-  constructor() { 
+  constructor(@Inject(DOCUMENT) private document: Document) { 
     document.onscroll = () => {
       document.querySelector('nav')
         .classList.toggle('scrolled', document.scrollingElement.scrollTop > document.querySelector('nav').offsetHeight)      
@@ -38,6 +42,14 @@ export class NavbarComponent implements OnInit  {
   }
 
   ngOnInit(): void {
+  }
+
+  toggle() {
+    if ((this.document.querySelector('.nav-links') as HTMLElement).style.display !== 'flex') {
+      (this.document.querySelector('.nav-links') as HTMLElement).style.display = 'flex';
+    } else {
+      (this.document.querySelector('.nav-links') as HTMLElement).style.display = 'none';
+    }
   }
 
 }

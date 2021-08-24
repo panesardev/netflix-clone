@@ -10,6 +10,7 @@ nav {
 	top: 0;
 	right: 0;
 	height: 68px;
+	z-index: 4;
 	width: 100%;
 	padding: 0 1rem;
 	transition: background-color 500ms ease;
@@ -30,6 +31,19 @@ nav {
 }
 
 .nav-links {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 50%;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1rem;
+	padding-left: 1rem;
+	z-index: 10;
+	background-color: var(--dark);
+
 	a {
 		color:#cfcfcf;
 		font-size: .9rem;
@@ -61,5 +75,21 @@ nav {
 @media screen and (min-width: 768px) {
 	nav {
 		padding: 0 3rem;
+	}
+	.nav-links {
+		display: flex;
+		position: unset;
+		top: unset;
+		left: unset;
+		background-color: unset;
+		height: unset;
+		width: unset;
+		flex-direction: unset;
+		gap: 1.5rem;
+		padding-left: unset;
+		z-index: unset;
+	}
+	.menu {
+		display: none;
 	}
 }
